@@ -1,0 +1,119 @@
+/* Center the form on the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+
+  /* Form container */
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* Fieldset styling */
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+  }
+
+  /* Form field block styling */
+  form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Uniform input, select, textarea width */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Label styling */
+  label {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  /* Status and Date side by side */
+  #role,
+  #date {
+    width: 50%; /* Ensures status and date fields are the same width as the first name field */
+    max-width: 160px; /* Aligns them with the input width */
+    margin: 0 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+  }
+
+  div:nth-of-type(4),
+  div:nth-of-type(5) {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  /* Radio group styling */
+  .radio-group {
+    display: flex;
+    flex-direction: column; /* Align radio buttons in a row */
+    align-items: center; /* Align them in the center vertically */
+    max-width: 320px; /* Same width as the other fields */
+    width: 100%;
+    gap: 5px; /* Adds a gap between the radio buttons */
+    margin: 0 auto;
+  }
+
+  .radio-group>input[type="radio"] {
+    align-self: flex-start;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Align radio inputs in a row */
+  /* .radio-group input[type="radio"],
+  .radio-group label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  } */
+
+  /* Checkbox row */
+  .checkbox-row {
+    display: flex;
+    flex-direction: row; /* Space between the checkboxes */
+    gap: 10px; /* Adds space between checkboxes */
+    max-width: 320px; /* Same width as input fields */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Submit button */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+  }
